@@ -1,0 +1,265 @@
+IQ-TREE multicore version 2.0.3 for Mac OS X 64-bit built Dec 19 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Serinas-MacBook-Pro.local (AVX2, FMA3, 8 GB RAM)
+Command: iqtree -s HMMaligned_trimmed_40_MTs.fasta -m MFP
+Seed:    81334 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jul  4 10:37:12 2021
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file HMMaligned_trimmed_40_MTs.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 421 columns, 415 distinct patterns
+323 parsimony-informative, 52 singleton sites, 46 constant sites
+                                                                                 Gap/Ambiguity  Composition  p-value
+   1  MALASAMN05422137_METAGscaffold4_gene141_Candidatus_Eudoremicrobiaceae_proteusin   40.14%    passed     49.36%
+   2  BGC0000021_AEP40919_1_Nocardiopsis_sp_FU_40_Polyketide                            38.00%    passed     86.91%
+   3  BGC0000026_AAK83186_1_Streptomyces_viridochromogenes_Tue57_Saccharide             43.23%    passed     31.33%
+   4  BGC0000147_AAK19884_1_Sorangium_cellulosum_Polyketide                             33.97%    passed     81.19%
+   5  BGC0000222_BAJ52700_1_Streptomyces_sp_TA_0256_Polyketide                          36.10%    passed     54.88%
+   6  BGC0000287_PA2302_Pseudomonas_aeruginosa_PAO1_NRP                                 25.42%    passed     11.21%
+   7  BGC0000288_BAJ19055_1_Streptomyces_sp_SANK_62799_NRP                              41.81%    passed     63.01%
+   8  BGC0000291_AAZ23082_1_Streptomyces_fradiae_NRP                                    37.77%    passed     33.65%
+   9  BGC0000331_ABI26077_1_Planktothrix_agardhii_NIVA_CYA_116_NRP                      26.13%    failed      0.00%
+  10  BGC0000333_Sare_4554_Salinispora_arenicola_CNS_205_NRP                            37.53%    passed     58.30%
+  11  BGC0000362_AAD44221_1_Mycobacterium_avium_NRP                                     42.99%    passed     12.20%
+  12  BGC0000378_ABV56588_1_Kutzneria_sp_744_NRP                                        28.27%    passed     52.45%
+  13  BGC0000495_ACR33061_1_Actinoplanes_garbadinensis_RiPP                             45.37%    passed     24.87%
+  14  BGC0000698_ABC42543_1_Streptomyces_hygroscopicus_Saccharide                       40.86%    failed      3.51%
+  15  BGC0000769_AAN05766_1_NA_NA                                                       76.25%    passed     29.77%
+  16  BGC0000873_CAD62202_1_Saccharothrix_mutabilis_Other                               35.63%    failed      0.82%
+  17  BGC0000873_CAD62205_1_Saccharothrix_mutabilis_Other                               43.94%    failed      2.66%
+  18  BGC0000949_BAI53084_1_Streptomyces_griseus_NRP                                    42.04%    passed     23.77%
+  19  BGC0000967_BAP05589_1_uncultured_Candidatus_Entotheonella_sp_NRP_Polyketide       27.79%    passed     21.78%
+  20  BGC0000970_CAQ43079_1_Chondromyces_crocatus_NRP_Polyketide                        33.73%    passed     71.30%
+  21  BGC0000994_AAF86398_1_Streptomyces_hygroscopicus_NRP_Polyketide                   38.24%    passed     65.95%
+  22  BGC0001031_AFX60309_1_Serratia_marcescens_NRP_Polyketide                          26.13%    failed      1.25%
+  23  BGC0001032_AFX60332_1_Serratia_plymuthica_NRP_Polyketide                          26.13%    passed      6.00%
+  24  BGC0001034_CCE88382_1_Sorangium_cellulosum_NRP_Polyketide                         32.30%    passed     78.44%
+  25  BGC0001040_CAA60470_1_Streptomyces_rapamycinicus_NRRL_5491_NRP_Polyketide         38.24%    passed     98.86%
+  26  BGC0001138_AET51865_1_Marinactinospora_thermotolerans_Other                       42.52%    failed      0.85%
+  27  BGC0001138_AET51868_1_Marinactinospora_thermotolerans_Other                       44.18%    passed     40.99%
+  28  BGC0001183_AGC09508_1_Streptomyces_sp_FXJ7_023_Polyketide                         38.24%    passed     80.96%
+  29  BGC0001191_AKC92641_1_Amycolatopsis_sp_SANK_60206_Other                           42.04%    passed     68.56%
+  30  BGC0001350_AMH40422_1_Leptolyngbya_sp_ISBN3_Nov_94_8_Polyketide                   25.89%    passed      6.30%
+  31  BGC0001373_BAV32148_1_Sordaria_araneosa_Polyketide                                38.48%    failed      3.03%
+  32  BGC0001451_BCRE_RS14165_Candidatus_Burkholderia_crenata_NRP                       27.55%    passed     17.40%
+  33  BGC0001519_STRAU_RS01650_Streptomyces_aurantiacus_JA_4570_NRP_Polyketide          29.93%    passed     61.66%
+  34  BGC0001807_ATL73058_1_Streptomyces_pactum_NRP_Polyketide                          42.76%    passed     67.40%
+  35  BGC0001836_DAC80073_1_Gynuella_sunshinyii_YC6258_Polyketide                       25.89%    failed      0.04%
+  36  BGC0001851_IO28_RS0104885_Streptomyces_erythrochromogenes_Saccharide              36.34%    passed     58.09%
+  37  BGC0001852_IH80_RS0102840_Streptomyces_sp_NRRL_S_378_Saccharide                   36.34%    passed     56.56%
+  38  BGC0001902_AJY78093_1_Myxococcus_virescens_Polyketide                             29.22%    passed     49.46%
+  39  BGC0001963_AZF85925_1_Catenulispora_sp_Polyketide                                 36.34%    passed     24.33%
+  40  BGC0002011_AMYAL_RS47350_Amycolatopsis_alba_DSM_44262_Polyketide                  36.10%    passed     48.18%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                             36.75%  8 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -22456.580
+Optimal log-likelihood: -22455.500
+Proportion of invariable sites: 0.015
+Gamma shape alpha: 0.916
+Parameters optimization took 1 rounds (0.146 sec)
+Time for fast ML tree search: 0.978 seconds
+
+NOTE: ModelFinder requires 26 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 421) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            23303.044    77  46760.088    46795.108    47071.370
+  2  LG+I          23188.120    78  46532.240    46568.275    46847.566
+  3  LG+G4         22467.066    78  45090.131    45126.166    45405.457
+  4  LG+I+G4       22454.897    79  45067.793    45104.860    45387.161
+  5  LG+R2         22652.084    79  45462.168    45499.235    45781.536
+  6  LG+R3         22477.746    81  45117.492    45156.678    45444.946
+  7  LG+R4         22439.957    83  45045.914    45087.290    45381.452
+  8  LG+R5         22420.805    85  45011.610    45055.251    45355.233
+  9  LG+R6         22415.640    87  45005.279    45051.261    45356.988
+ 21  LG+F+R5       22053.249    104 44314.498    44383.612    44734.932
+WARNING: Log-likelihood -22066.6 of LG+F+R6 worse than LG+F+R5 -22053.2
+ 22  LG+F+R6       22066.640    106 44345.279    44417.521    44773.798
+ 34  WAG+R5        22387.761    85  44945.521    44989.163    45289.145
+ 35  WAG+R6        22383.637    87  44941.275    44987.257    45292.984
+ 47  WAG+F+R5      22042.850    104 44293.699    44362.813    44714.133
+ 48  WAG+F+R6      22039.940    106 44291.879    44364.121    44720.399
+ 60  JTT+R5        22484.293    85  45138.587    45182.228    45482.210
+ 61  JTT+R6        22478.544    87  45131.087    45177.069    45482.796
+ 73  JTT+F+R5      22165.201    104 44538.403    44607.516    44958.836
+ 74  JTT+F+R6      22158.044    106 44528.088    44600.330    44956.607
+ 86  JTTDCMut+R5   22487.497    85  45144.994    45188.636    45488.618
+ 87  JTTDCMut+R6   22482.206    87  45138.411    45184.393    45490.120
+ 99  JTTDCMut+F+R5 22164.270    104 44536.540    44605.654    44956.973
+100  JTTDCMut+F+R6 22157.119    106 44526.238    44598.480    44954.757
+112  DCMut+R5      22737.449    85  45644.899    45688.540    45988.522
+113  DCMut+R6      22725.262    87  45624.523    45670.505    45976.232
+125  DCMut+F+R5    22285.249    104 44778.499    44847.613    45198.932
+126  DCMut+F+R6    22270.441    106 44752.882    44825.124    45181.401
+138  VT+R5         22373.429    85  44916.858    44960.500    45260.482
+139  VT+R6         22370.077    87  44914.155    44960.137    45265.864
+151  VT+F+R5       22021.063    104 44250.126    44319.240    44670.560
+152  VT+F+R6       22019.047    106 44250.095    44322.337    44678.614
+164  PMB+R5        22382.873    85  44935.746    44979.388    45279.370
+165  PMB+R6        22382.760    87  44939.520    44985.502    45291.229
+177  PMB+F+R5      22059.115    104 44326.229    44395.343    44746.663
+178  PMB+F+R6      22058.310    106 44328.620    44400.862    44757.139
+190  Blosum62+R5   22426.127    85  45022.253    45065.895    45365.877
+191  Blosum62+R6   22422.630    87  45019.260    45065.242    45370.969
+203  Blosum62+F+R5 22044.995    104 44297.990    44367.104    44718.424
+204  Blosum62+F+R6 22044.938    106 44301.877    44374.119    44730.396
+216  Dayhoff+R5    22738.018    85  45646.036    45689.678    45989.660
+217  Dayhoff+R6    22725.654    87  45625.308    45671.290    45977.017
+229  Dayhoff+F+R5  22285.923    104 44779.845    44848.959    45200.279
+230  Dayhoff+F+R6  22270.787    106 44753.574    44825.816    45182.093
+242  mtREV+R5      23932.486    85  48034.972    48078.614    48378.596
+WARNING: Log-likelihood -23935.3 of mtREV+R6 worse than mtREV+R5 -23932.5
+243  mtREV+R6      23935.267    87  48044.535    48090.517    48396.244
+255  mtREV+F+R5    22427.770    104 45063.540    45132.654    45483.974
+WARNING: Log-likelihood -22435.6 of mtREV+F+R6 worse than mtREV+F+R5 -22427.8
+256  mtREV+F+R6    22435.611    106 45083.223    45155.465    45511.742
+268  mtART+R5      24411.245    85  48992.489    49036.131    49336.113
+WARNING: Log-likelihood -24416.5 of mtART+R6 worse than mtART+R5 -24411.2
+269  mtART+R6      24416.492    87  49006.985    49052.966    49358.694
+281  mtART+F+R5    22772.217    104 45752.434    45821.548    46172.868
+WARNING: Log-likelihood -22779.8 of mtART+F+R6 worse than mtART+F+R5 -22772.2
+282  mtART+F+R6    22779.791    106 45771.583    45843.825    46200.102
+294  mtZOA+R5      23680.527    85  47531.055    47574.697    47874.679
+295  mtZOA+R6      23676.247    87  47526.493    47572.475    47878.202
+307  mtZOA+F+R5    22510.245    104 45228.491    45297.605    45648.925
+WARNING: Log-likelihood -22514.4 of mtZOA+F+R6 worse than mtZOA+F+R5 -22510.2
+308  mtZOA+F+R6    22514.399    106 45240.799    45313.041    45669.318
+320  mtMet+R5      24387.044    85  48944.088    48987.730    49287.712
+321  mtMet+R6      24385.711    87  48945.422    48991.404    49297.131
+333  mtMet+F+R5    22450.977    104 45109.953    45179.067    45530.387
+WARNING: Log-likelihood -22455.9 of mtMet+F+R6 worse than mtMet+F+R5 -22451
+334  mtMet+F+R6    22455.897    106 45123.794    45196.036    45552.313
+346  mtVer+R5      24206.791    85  48583.582    48627.224    48927.206
+347  mtVer+R6      24206.769    87  48587.539    48633.521    48939.248
+359  mtVer+F+R5    22608.369    104 45424.737    45493.851    45845.171
+360  mtVer+F+R6    22597.889    106 45407.777    45480.019    45836.297
+372  mtInv+R5      24717.555    85  49605.110    49648.752    49948.734
+373  mtInv+R6      24713.489    87  49600.978    49646.960    49952.687
+385  mtInv+F+R5    22339.082    104 44886.164    44955.278    45306.598
+386  mtInv+F+R6    22325.706    106 44863.411    44935.653    45291.930
+398  mtMAM+R5      24266.556    85  48703.111    48746.753    49046.735
+399  mtMAM+R6      24261.924    87  48697.848    48743.830    49049.557
+411  mtMAM+F+R5    22748.840    104 45705.680    45774.794    46126.114
+WARNING: Log-likelihood -22753.4 of mtMAM+F+R6 worse than mtMAM+F+R5 -22748.8
+412  mtMAM+F+R6    22753.427    106 45718.855    45791.097    46147.374
+424  HIVb+R5       22879.908    85  45929.817    45973.459    46273.441
+425  HIVb+R6       22874.625    87  45923.250    45969.232    46274.959
+437  HIVb+F+R5     22489.462    104 45186.924    45256.038    45607.358
+WARNING: Log-likelihood -22506.2 of HIVb+F+R6 worse than HIVb+F+R5 -22489.5
+438  HIVb+F+R6     22506.170    106 45224.340    45296.582    45652.859
+450  HIVw+R5       23907.310    85  47984.620    48028.262    48328.244
+451  HIVw+R6       23897.795    87  47969.589    48015.571    48321.298
+463  HIVw+F+R5     22770.287    104 45748.573    45817.687    46169.007
+464  HIVw+F+R6     22759.704    106 45731.407    45803.649    46159.926
+476  FLU+R5        23128.899    85  46427.798    46471.440    46771.422
+477  FLU+R6        23117.581    87  46409.161    46455.143    46760.870
+489  FLU+F+R5      22387.256    104 44982.511    45051.625    45402.945
+WARNING: Log-likelihood -22400.9 of FLU+F+R6 worse than FLU+F+R5 -22387.3
+490  FLU+F+R6      22400.850    106 45013.701    45085.943    45442.220
+502  rtREV+R5      22713.286    85  45596.572    45640.213    45940.195
+503  rtREV+R6      22710.944    87  45595.888    45641.870    45947.597
+515  rtREV+F+R5    22094.188    104 44396.377    44465.491    44816.811
+516  rtREV+F+R6    22091.518    106 44395.035    44467.277    44823.554
+528  cpREV+R5      22576.729    85  45323.458    45367.100    45667.082
+529  cpREV+R6      22566.770    87  45307.540    45353.522    45659.249
+541  cpREV+F+R5    22155.132    104 44518.263    44587.377    44938.697
+542  cpREV+F+R6    22148.430    106 44508.860    44581.102    44937.379
+Akaike Information Criterion:           VT+F+R6
+Corrected Akaike Information Criterion: VT+F+R5
+Bayesian Information Criterion:         VT+F+R5
+Best-fit model: VT+F+R5 chosen according to BIC
+
+All model information printed to HMMaligned_trimmed_40_MTs.fasta.model.gz
+CPU time for ModelFinder: 518.432 seconds (0h:8m:38s)
+Wall-clock time for ModelFinder: 523.376 seconds (0h:8m:43s)
+
+NOTE: 13 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -22021.063
+Optimal log-likelihood: -22021.048
+Site proportion and rates:  (0.028,0.009) (0.129,0.141) (0.415,0.477) (0.329,1.018) (0.098,4.559)
+Parameters optimization took 1 rounds (0.295 sec)
+Computing ML distances based on estimated model parameters... 0.257 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.002 seconds
+Log-likelihood of BIONJ tree: -22036.011
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.628 second
+Computing log-likelihood of 98 initial trees ... 2.757 seconds
+Current best score: -22021.048
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -22016.278
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -22013.368
+Iteration 10 / LogL: -22062.058 / Time: 0h:0m:10s
+Iteration 20 / LogL: -22027.408 / Time: 0h:0m:17s
+Finish initializing candidate tree set (13)
+Current best tree score: -22013.368 / CPU time: 17.029
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -22013.539 / Time: 0h:0m:23s (0h:1m:0s left)
+Iteration 40 / LogL: -22013.472 / Time: 0h:0m:28s (0h:0m:46s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -22013.081
+Iteration 50 / LogL: -22013.526 / Time: 0h:0m:34s (0h:0m:38s left)
+Iteration 60 / LogL: -22014.489 / Time: 0h:0m:39s (0h:0m:30s left)
+Iteration 70 / LogL: -22013.142 / Time: 0h:0m:45s (0h:0m:23s left)
+Iteration 80 / LogL: -22013.474 / Time: 0h:0m:51s (0h:0m:16s left)
+Iteration 90 / LogL: -22022.839 / Time: 0h:0m:56s (0h:0m:9s left)
+Iteration 100 / LogL: -22013.846 / Time: 0h:1m:1s (0h:0m:3s left)
+TREE SEARCH COMPLETED AFTER 106 ITERATIONS / Time: 0h:1m:4s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -22013.081
+2. Current log-likelihood: -22013.066
+3. Current log-likelihood: -22013.053
+4. Current log-likelihood: -22013.040
+5. Current log-likelihood: -22013.028
+6. Current log-likelihood: -22013.017
+7. Current log-likelihood: -22013.005
+8. Current log-likelihood: -22012.994
+9. Current log-likelihood: -22012.983
+10. Current log-likelihood: -22012.972
+11. Current log-likelihood: -22012.961
+Optimal log-likelihood: -22012.947
+Site proportion and rates:  (0.029,0.010) (0.128,0.135) (0.412,0.467) (0.334,1.001) (0.097,4.701)
+Parameters optimization took 11 rounds (2.848 sec)
+BEST SCORE FOUND : -22012.947
+Total tree length: 70.879
+
+Total number of iterations: 106
+CPU time used for tree search: 63.872 sec (0h:1m:3s)
+Wall-clock time used for tree search: 64.005 sec (0h:1m:4s)
+Total CPU time used: 67.473 sec (0h:1m:7s)
+Total wall-clock time used: 67.632 sec (0h:1m:7s)
+
+Analysis results written to: 
+  IQ-TREE report:                HMMaligned_trimmed_40_MTs.fasta.iqtree
+  Maximum-likelihood tree:       HMMaligned_trimmed_40_MTs.fasta.treefile
+  Likelihood distances:          HMMaligned_trimmed_40_MTs.fasta.mldist
+  Screen log file:               HMMaligned_trimmed_40_MTs.fasta.log
+
+Date and Time: Sun Jul  4 10:47:03 2021

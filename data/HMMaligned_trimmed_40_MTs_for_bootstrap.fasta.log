@@ -1,0 +1,185 @@
+IQ-TREE multicore version 2.0.3 for Mac OS X 64-bit built Dec 19 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Serinas-MacBook-Pro.local (AVX2, FMA3, 8 GB RAM)
+Command: iqtree -s HMMaligned_trimmed_40_MTs_for_bootstrap.fasta -m VT+F+R5 -B 1000 -T 2
+Seed:    744363 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jul  4 10:51:09 2021
+Kernel:  AVX+FMA - 2 threads (8 CPU cores detected)
+
+Reading alignment file HMMaligned_trimmed_40_MTs_for_bootstrap.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 421 columns, 415 distinct patterns
+323 parsimony-informative, 52 singleton sites, 46 constant sites
+                                                                                 Gap/Ambiguity  Composition  p-value
+   1  MALASAMN05422137_METAGscaffold4_gene141_Candidatus_Eudoremicrobiaceae_proteusin   40.14%    passed     49.36%
+   2  BGC0000021_AEP40919_1_Nocardiopsis_sp_FU_40_Polyketide                            38.00%    passed     86.91%
+   3  BGC0000026_AAK83186_1_Streptomyces_viridochromogenes_Tue57_Saccharide             43.23%    passed     31.33%
+   4  BGC0000147_AAK19884_1_Sorangium_cellulosum_Polyketide                             33.97%    passed     81.19%
+   5  BGC0000222_BAJ52700_1_Streptomyces_sp_TA_0256_Polyketide                          36.10%    passed     54.88%
+   6  BGC0000287_PA2302_Pseudomonas_aeruginosa_PAO1_NRP                                 25.42%    passed     11.21%
+   7  BGC0000288_BAJ19055_1_Streptomyces_sp_SANK_62799_NRP                              41.81%    passed     63.01%
+   8  BGC0000291_AAZ23082_1_Streptomyces_fradiae_NRP                                    37.77%    passed     33.65%
+   9  BGC0000331_ABI26077_1_Planktothrix_agardhii_NIVA_CYA_116_NRP                      26.13%    failed      0.00%
+  10  BGC0000333_Sare_4554_Salinispora_arenicola_CNS_205_NRP                            37.53%    passed     58.30%
+  11  BGC0000362_AAD44221_1_Mycobacterium_avium_NRP                                     42.99%    passed     12.20%
+  12  BGC0000378_ABV56588_1_Kutzneria_sp_744_NRP                                        28.27%    passed     52.45%
+  13  BGC0000495_ACR33061_1_Actinoplanes_garbadinensis_RiPP                             45.37%    passed     24.87%
+  14  BGC0000698_ABC42543_1_Streptomyces_hygroscopicus_Saccharide                       40.86%    failed      3.51%
+  15  BGC0000769_AAN05766_1_NA_NA                                                       76.25%    passed     29.77%
+  16  BGC0000873_CAD62202_1_Saccharothrix_mutabilis_Other                               35.63%    failed      0.82%
+  17  BGC0000873_CAD62205_1_Saccharothrix_mutabilis_Other                               43.94%    failed      2.66%
+  18  BGC0000949_BAI53084_1_Streptomyces_griseus_NRP                                    42.04%    passed     23.77%
+  19  BGC0000967_BAP05589_1_uncultured_Candidatus_Entotheonella_sp_NRP_Polyketide       27.79%    passed     21.78%
+  20  BGC0000970_CAQ43079_1_Chondromyces_crocatus_NRP_Polyketide                        33.73%    passed     71.30%
+  21  BGC0000994_AAF86398_1_Streptomyces_hygroscopicus_NRP_Polyketide                   38.24%    passed     65.95%
+  22  BGC0001031_AFX60309_1_Serratia_marcescens_NRP_Polyketide                          26.13%    failed      1.25%
+  23  BGC0001032_AFX60332_1_Serratia_plymuthica_NRP_Polyketide                          26.13%    passed      6.00%
+  24  BGC0001034_CCE88382_1_Sorangium_cellulosum_NRP_Polyketide                         32.30%    passed     78.44%
+  25  BGC0001040_CAA60470_1_Streptomyces_rapamycinicus_NRRL_5491_NRP_Polyketide         38.24%    passed     98.86%
+  26  BGC0001138_AET51865_1_Marinactinospora_thermotolerans_Other                       42.52%    failed      0.85%
+  27  BGC0001138_AET51868_1_Marinactinospora_thermotolerans_Other                       44.18%    passed     40.99%
+  28  BGC0001183_AGC09508_1_Streptomyces_sp_FXJ7_023_Polyketide                         38.24%    passed     80.96%
+  29  BGC0001191_AKC92641_1_Amycolatopsis_sp_SANK_60206_Other                           42.04%    passed     68.56%
+  30  BGC0001350_AMH40422_1_Leptolyngbya_sp_ISBN3_Nov_94_8_Polyketide                   25.89%    passed      6.30%
+  31  BGC0001373_BAV32148_1_Sordaria_araneosa_Polyketide                                38.48%    failed      3.03%
+  32  BGC0001451_BCRE_RS14165_Candidatus_Burkholderia_crenata_NRP                       27.55%    passed     17.40%
+  33  BGC0001519_STRAU_RS01650_Streptomyces_aurantiacus_JA_4570_NRP_Polyketide          29.93%    passed     61.66%
+  34  BGC0001807_ATL73058_1_Streptomyces_pactum_NRP_Polyketide                          42.76%    passed     67.40%
+  35  BGC0001836_DAC80073_1_Gynuella_sunshinyii_YC6258_Polyketide                       25.89%    failed      0.04%
+  36  BGC0001851_IO28_RS0104885_Streptomyces_erythrochromogenes_Saccharide              36.34%    passed     58.09%
+  37  BGC0001852_IH80_RS0102840_Streptomyces_sp_NRRL_S_378_Saccharide                   36.34%    passed     56.56%
+  38  BGC0001902_AJY78093_1_Myxococcus_virescens_Polyketide                             29.22%    passed     49.46%
+  39  BGC0001963_AZF85925_1_Catenulispora_sp_Polyketide                                 36.34%    passed     24.33%
+  40  BGC0002011_AMYAL_RS47350_Amycolatopsis_alba_DSM_44262_Polyketide                  36.10%    passed     48.18%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                             36.75%  8 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 744363)...
+
+NOTE: 15 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -22759.560
+2. Current log-likelihood: -22135.382
+3. Current log-likelihood: -22116.460
+4. Current log-likelihood: -22114.644
+5. Current log-likelihood: -22112.468
+6. Current log-likelihood: -22108.652
+7. Current log-likelihood: -22105.585
+8. Current log-likelihood: -22104.558
+9. Current log-likelihood: -22104.152
+10. Current log-likelihood: -22103.979
+Optimal log-likelihood: -22103.906
+Site proportion and rates:  (0.057,0.066) (0.104,0.191) (0.411,0.564) (0.310,1.101) (0.118,3.429)
+Parameters optimization took 10 rounds (1.737 sec)
+Computing ML distances based on estimated model parameters... 0.225 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -22050.972
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.617 second
+Computing log-likelihood of 98 initial trees ... 1.621 seconds
+Current best score: -22050.972
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -22027.397
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -22013.696
+Iteration 10 / LogL: -22014.319 / Time: 0h:0m:9s
+Iteration 20 / LogL: -22014.074 / Time: 0h:0m:13s
+Finish initializing candidate tree set (8)
+Current best tree score: -22013.696 / CPU time: 11.695
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -22014.238 / Time: 0h:0m:16s (0h:0m:43s left)
+Iteration 40 / LogL: -22014.591 / Time: 0h:0m:19s (0h:0m:33s left)
+Iteration 50 / LogL: -22014.560 / Time: 0h:0m:22s (0h:0m:25s left)
+Log-likelihood cutoff on original alignment: -22057.766
+Iteration 60 / LogL: -22014.105 / Time: 0h:0m:25s (0h:0m:19s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -22013.412
+Iteration 70 / LogL: -22015.733 / Time: 0h:0m:29s (0h:0m:14s left)
+Iteration 80 / LogL: -22013.717 / Time: 0h:0m:32s (0h:0m:10s left)
+Iteration 90 / LogL: -22013.848 / Time: 0h:0m:35s (0h:0m:5s left)
+Iteration 100 / LogL: -22013.527 / Time: 0h:0m:39s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -22057.766
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+TREE SEARCH COMPLETED AFTER 106 ITERATIONS / Time: 0h:0m:41s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -22013.412
+2. Current log-likelihood: -22013.389
+3. Current log-likelihood: -22013.369
+4. Current log-likelihood: -22013.339
+5. Current log-likelihood: -22013.321
+6. Current log-likelihood: -22013.293
+7. Current log-likelihood: -22013.276
+8. Current log-likelihood: -22013.259
+9. Current log-likelihood: -22013.242
+10. Current log-likelihood: -22013.225
+11. Current log-likelihood: -22013.209
+12. Current log-likelihood: -22013.193
+13. Current log-likelihood: -22013.178
+14. Current log-likelihood: -22013.163
+15. Current log-likelihood: -22013.148
+16. Current log-likelihood: -22013.133
+17. Current log-likelihood: -22013.119
+18. Current log-likelihood: -22013.105
+19. Current log-likelihood: -22013.091
+20. Current log-likelihood: -22013.078
+21. Current log-likelihood: -22013.065
+22. Current log-likelihood: -22013.052
+23. Current log-likelihood: -22013.039
+24. Current log-likelihood: -22013.027
+25. Current log-likelihood: -22013.015
+26. Current log-likelihood: -22013.004
+27. Current log-likelihood: -22012.992
+28. Current log-likelihood: -22012.981
+29. Current log-likelihood: -22012.970
+30. Current log-likelihood: -22012.959
+31. Current log-likelihood: -22012.948
+32. Current log-likelihood: -22012.938
+Optimal log-likelihood: -22012.924
+Site proportion and rates:  (0.029,0.010) (0.128,0.135) (0.412,0.466) (0.334,1.000) (0.097,4.718)
+Parameters optimization took 32 rounds (5.334 sec)
+BEST SCORE FOUND : -22012.924
+Creating bootstrap support values...
+Split supports printed to NEXUS file HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.splits.nex
+Total tree length: 71.023
+
+Total number of iterations: 106
+CPU time used for tree search: 78.006 sec (0h:1m:18s)
+Wall-clock time used for tree search: 39.638 sec (0h:0m:39s)
+Total CPU time used: 92.820 sec (0h:1m:32s)
+Total wall-clock time used: 47.132 sec (0h:0m:47s)
+
+Computing bootstrap consensus tree...
+Reading input file HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.splits.nex...
+40 taxa and 281 splits.
+Consensus tree written to HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.contree
+Reading input trees file HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.contree
+Log-likelihood of consensus tree: -22013.296
+
+Analysis results written to: 
+  IQ-TREE report:                HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.iqtree
+  Maximum-likelihood tree:       HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.treefile
+  Likelihood distances:          HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.splits.nex
+  Consensus tree:                HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.contree
+  Screen log file:               HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.log
+
+Date and Time: Sun Jul  4 10:51:57 2021
