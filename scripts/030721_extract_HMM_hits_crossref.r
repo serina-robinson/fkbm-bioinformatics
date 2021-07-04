@@ -3,10 +3,11 @@ pacman::p_load("tidyverse", "Biostrings",
                "DECIPHER", "readxl")
 
 # Read in HMM hits
-hits <- read_delim("data/MiBIG_Methyltransf_2.0_hits.txt", delim = " ", col_names = F)
+hits <- read_delim("data/HMMsearch_NCcutoff_40MTs.txt", delim = " ", col_names = F)
 hits$X9 <- trimws(hits$X9)
 accs <- word(hits$X9, sep = "\\|", -1) # 
 accs
+
 # Read in the MIBiG sequences
 mibig <- readAAStringSet("data/mibig_prot_seqs_2.0.fasta")
 inds <- grep(paste0(accs, collapse = "|"), names(mibig))
@@ -28,48 +29,70 @@ metdf <- data.frame(bgc = word(names(met_hits), sep = "\\|", 1),
                     aa = met_hits) %>%
   left_join(., metadat, by = c("bgc" = "BGC")) %>%
   dplyr::mutate(acc = word(nams, sep = "\\|", 5))
-metdf$acc
+
+# Read in manually-curated literature information about clusters
+manual <- read_excel("data/39_MIBiG_Methyltransf_21_lit_dat_manually_curated.xlsx") %>%
+  dplyr::filter(to_include == "yes") %>%
+  dplyr::filter(!duplicated(acc))
+
+merg <- manual %>%
+  inner_join(., metdf, keep = F, by = "bgc", suffix = c("", ".y")) %>%
+  select_at(
+    vars(-ends_with(".y"))
+  ) %>%
+  dplyr::group_by(acc) %>%
+  dplyr::slice(1) %>%
+  ungroup()
+merg
+
+write_csv(merg, "data/29_MIBiG_hits_manually_curated_to_include.csv")
 # Manually identified and replaced the missing taxon
 # https://mibig.secondarymetabolites.org/repository/BGC0000769/index.html#r1c1
 # BGC0000769
 # Mycobacterium avium subsp. hominissuis A5
 # Saccharide
-metdf$taxon[is.na(metdf$taxon)] <- "Mycobacterium avium subsp. hominissuis A5"           
-metdf$class[is.na(metdf$class)] <- "Saccharide"              
-
-
+# metdf$taxon[is.na(metdf$taxon)] <- "Mycobacterium avium subsp. hominissuis A5"           
+# metdf$class[is.na(metdf$class)] <- "Saccharide: unknown" 
+# metdf$dataset[is.na(metdf$dataset)] <- "mibig"
+# write_csv(metdf, "data/39_MIBiG_Methyltransf_21_lit_dat.csv")
 # Make a new AA set with updated names
-aaset <- AAStringSet(metdf$aa)
+aaset <- AAStringSet(merg$aa)
 
-names(aaset) <- paste(metdf$bgc, metdf$acc, metdf$taxon, metdf$class, sep = "_")
+# names(aaset) <- paste(merg$bgc, merg$acc, merg$taxon, merg$natural_product, merg$class, sep = "_")
+names(aaset) <- paste(merg$acc, merg$taxon, merg$natural_product, merg$class, sep = "_")
+names(aaset)
+
 names(aaset) <- gsub(" |-|,|\\.", "_", names(aaset))
 names(aaset) <- gsub(":unknown", "", names(aaset))
 names(aaset) <- gsub("__|___", "_", names(aaset))
-names(aaset)
+names(aaset) <- gsub("NRP_Polyketide", "NRPPolyketide", names(aaset))
 
 # Now add in the Eremiobacterota sequence
 erem <- readAAStringSet("data/Eudoremicrobiaceae_EreM.fasta.txt")
+names(erem)
+poyE <- readAAStringSet("data/PoyE_AerE_renamed.fasta")
 
-aacomb <- AAStringSet(c(erem, aaset))
-writeXStringSet(aacomb, "data/40_methyltransferase_homologs.fasta")
+aacomb <- AAStringSet(c(poyE, erem, aaset))
+length(aacomb)
+names(aacomb)
+writeXStringSet(aacomb, "data/32_MT_homologs_with_outgroup.fasta")
 
-# Tried alignment using DECIPHER
-# width(aacomb)
-# dec <- AlignSeqs(aacomb)
-# subs <- AAStringSet(substr(dec, start = 320, stop = 860))
-# width(subs)
-# BrowseSeqs(subs, "data/40_MTs_aligned_trimmed.html") # need to find a local alignment or extract
-# BrowseSeqs(dec, "data/40_MTs_aligned.html")
+# Align using muscle
+# muscle -in 32_MT_homologs_with_outgroup.fasta -out 32_MT_homologs_with_outgroup_aligned.afa
 
-# Instead decided to align using HMMAlign
-hmmal <- readAAStringSet("data/HMMaligned_sto_to_fasta_40_MTs.fasta")
+# Trim gaps using trimal
+#./trimal -in ~/Documents/github/fkbm-bioinformatics/data/32_MT_homologs_with_outgroup_aligned.afa 
+# -gt 0.5 -out ~/Documents/github/fkbm-bioinformatics/data/32_MT_homologs_PoyE_outgroup_aligned_50gaps_removed_muscle.afa
+
+hmmal <- readAAStringSet("data/32_MT_homologs_PoyE_outgroup_aligned_50gaps_removed_muscle.afa")
 hmmal <- AAStringSet(toupper(hmmal))
-BrowseSeqs(hmmal, "40_MTs_hmmaligned.html")
+BrowseSeqs(hmmal, "32_MTs_homologs_PoyE_outgroup_aligned_50gaps_removed.html")
 
-# Subset the alignment to only include EreM domain
-subhmm <- AAStringSet(substr(hmmal, start = 2450, stop = 2870))
-BrowseSeqs(subhmm, "data/HMMaligned_trimmed_40_MTs.html")
-writeXStringSet(subhmm, "data/HMMaligned_trimmed_40_MTs_for_bootstrap.fasta")
+mthomologs <- readAAStringSet("data/32_MT_homologs_PoyE_outgroup_aligned_50gaps_removed_muscle.afa")
+names(mthomologs) <- gsub(" 347 bp", "", names(mthomologs))
+BrowseSeqs(mthomologs)
+writeXStringSet(mthomologs, "data/32_MT_homologs_PoyE_outgroup_aligned_50gaps_removed_muscle.afa")
+names(mthomologs)[1]
 
 # Tree properly using Iqtree
 # iqtree -s HMMaligned_trimmed_40_MTs.fasta -m MFP 
@@ -81,6 +104,9 @@ writeXStringSet(subhmm, "data/HMMaligned_trimmed_40_MTs_for_bootstrap.fasta")
 # Now do bootstrapping using best-fit model
 # iqtree -s HMMaligned_trimmed_40_MTs_for_bootstrap.fasta -m VT+F+R5 -B 1000 -T 2
 
+# iqtree -s 32_MT_homologs_PoyE_outgroup_aligned_50gaps_removed_muscle_nams_fixed.afa 
+# -o AFS60641.1_Candidatus_Entotheonella_factor_polytheonamide_PoyE_polytheonamide -m VT+F+R5 -B 5000 -T 2
+
 # Analysis results written to: 
 #   IQ-TREE report:                HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.iqtree
 # Maximum-likelihood tree:       HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.treefile
@@ -91,4 +117,4 @@ writeXStringSet(subhmm, "data/HMMaligned_trimmed_40_MTs_for_bootstrap.fasta")
 # Consensus tree:                HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.contree
 # Screen log file:               HMMaligned_trimmed_40_MTs_for_bootstrap.fasta.log
 
-# Read in the tree 
+

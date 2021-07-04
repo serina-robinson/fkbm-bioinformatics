@@ -1,0 +1,242 @@
+IQ-TREE 2.0.3 built Dec 19 2020
+
+Input file name: 32_MT_homologs_PoyE_outgroup_aligned_50gaps_removed_muscle.afa
+Type of analysis: tree reconstruction + ultrafast bootstrap (5000 replicates)
+Random seed number: 959774
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 32 sequences with 347 amino-acid sites
+Number of constant sites: 1 (= 0.288184% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1 (= 0.288184% of all sites)
+Number of parsimony informative sites: 340
+Number of distinct site patterns: 347
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: VT+F+R5
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0944
+  pi(R) = 0.0793
+  pi(N) = 0.0306
+  pi(D) = 0.0686
+  pi(C) = 0.0116
+  pi(Q) = 0.0346
+  pi(E) = 0.0815
+  pi(G) = 0.0754
+  pi(H) = 0.0292
+  pi(I) = 0.0487
+  pi(L) = 0.1032
+  pi(K) = 0.0213
+  pi(M) = 0.0180
+  pi(F) = 0.0376
+  pi(P) = 0.0483
+  pi(S) = 0.0485
+  pi(T) = 0.0481
+  pi(W) = 0.0106
+  pi(Y) = 0.0315
+  pi(V) = 0.0791
+
+Model of rate heterogeneity: FreeRate with 5 categories
+Site proportion and rates:  (0.0387,0.0926) (0.1366,0.3557) (0.0992,0.5370) (0.5111,0.9937) (0.2144,1.8034)
+
+ Category  Relative_rate  Proportion
+  1         0.0926         0.0387
+  2         0.3557         0.1366
+  3         0.5370         0.0992
+  4         0.9937         0.5111
+  5         1.8034         0.2144
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -18451.5001 (s.e. 318.9260)
+Unconstrained log-likelihood (without tree): -2029.7157
+Number of free parameters (#branches + #model parameters): 88
+Akaike information criterion (AIC) score: 37079.0001
+Corrected Akaike information criterion (AICc) score: 37139.7133
+Bayesian information criterion (BIC) score: 37417.7407
+
+Total tree length (sum of branch lengths): 28.9120
+Sum of internal branch lengths: 12.1748 (42.1098% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AFS60641.1_Candidatus_Entotheonella_factor_polytheonamide_PoyE_polytheonamide' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------AFS60641.1_Candidatus_Entotheonella_factor_polytheonamide_PoyE_polytheonamide
+|
++--WP_028499762.1_Microvirgula_aerodenitrificans_AerE_aeronamide
+|
+|                                       +-----------------Candidatus_Eudoremicrobium_malaspinii_EreM_this_study
+|                                 +-----| (92)
+|                                 |     |         +--AKC92641_1_Amycolatopsis_sp_SANK_60206_A_102395_Other
+|                                 |     +---------| (100)
+|                                 |               +--BAI53084_1_Streptomyces_griseus_A_500359_NRP
+|                             +---| (95)
+|                             |   |               +---AET51865_1_Marinactinospora_thermotolerans_A_201A_Other
+|                             |   |      +--------| (100)
+|                             |   |      |        +---CAD62202_1_Saccharothrix_mutabilis_A_201A_Other
+|                             |   |  +---| (97)
+|                             |   |  |   +-------------AAK83186_1_Streptomyces_viridochromogenes_Tue57_avilamycin_A_Saccharide
+|                             |   +--| (86)
+|                             |      |       +--AET51868_1_Marinactinospora_thermotolerans_A_201A_Other
+|                             |      +-------| (100)
+|                             |              +--CAD62205_1_Saccharothrix_mutabilis_A_201A_Other
++-----------------------------| (100)
+                              |                  +----ABI26077_1_Planktothrix_agardhii_NIVA_CYA_116_cyanopeptin_NRP
+                              |              +---| (99)
+                              |              |   |  +--DAC80073_1_Gynuella_sunshinyii_YC6258_tartrolon_Polyketide
+                              |              |   +--| (99)
+                              |              |      |  +--AMH40422_1_Leptolyngbya_sp_ISBN3_Nov_94_8_phormidolide_Polyketide
+                              |              |      +--| (86)
+                              |              |         |  +--AFX60309_1_Serratia_marcescens_oocydin_A_NRPPolyketide
+                              |              |         +--| (100)
+                              |              |            +--AFX60332_1_Serratia_plymuthica_oocydin_A_NRPPolyketide
+                              |           +--| (45)
+                              |           |  |     +----BCRE_RS14165_Candidatus_Burkholderia_crenata_FR900359_NRP
+                              |           |  |  +--| (97)
+                              |           |  |  |  +----BAP05589_1_uncultured_Candidatus_Entotheonella_sp_calyculin_NRPPolyketide
+                              |           |  +--| (63)
+                              |           |     |     +----PA2302_Pseudomonas_aeruginosa_PAO1_l_2_Amino_4_methoxy_trans_3_butenoic_acid_NRP
+                              |           |     |  +--| (71)
+                              |           |     |  |  +------AAZ23082_1_Streptomyces_fradiae_A54145_NRP
+                              |           |     +--| (55)
+                              |           |        |   +--ABV56588_1_Kutzneria_sp_744_kutzneride_NRP
+                              |           |        +---| (100)
+                              |           |            +---STRAU_RS01650_Streptomyces_aurantiacus_JA_4570_aurantimycin_A_NRPPolyketide
+                              |        +--| (84)
+                              |        |  |  +-----AJY78093_1_Myxococcus_virescens_bengamide_Polyketide
+                              |        |  +--| (92)
+                              |        |     |  +--CAQ43079_1_Chondromyces_crocatus_chondrochloren_A_NRPPolyketide
+                              |        |     +--| (92)
+                              |        |        |  +--AAK19884_1_Sorangium_cellulosum_soraphens_Polyketide
+                              |        |        +--| (100)
+                              |        |           +--CCE88382_1_Sorangium_cellulosum_pellasoren_NRPPolyketide
+                              |     +--| (65)
+                              |     |  +-----------BAV32148_1_Sordaria_araneosa_sordarin_Polyketide
+                              |  +--| (67)
+                              |  |  |   +--CAA60470_1_Streptomyces_rapamycinicus_NRRL_5491_rapamycin_NRPPolyketide
+                              |  |  +---| (100)
+                              |  |      +--AAF86398_1_Streptomyces_hygroscopicus_FR_900520_NRPPolyketide
+                              +--| (32)
+                                 |        +-----AEP40919_1_Nocardiopsis_sp_FU_40_apoptolidin_Polyketide
+                                 |     +--| (85)
+                                 |     |  +------AMYAL_RS47350_Amycolatopsis_alba_DSM_44262_ansacarbamitocin_A_maytansinoids_Polyketide
+                                 |  +--| (85)
+                                 |  |  +----BAJ52700_1_Streptomyces_sp_TA_0256_FD_594_Polyketide
+                                 +--| (71)
+                                    +-----Sare_4554_Salinispora_arenicola_CNS_205_cyclomarin_D_NRP
+
+Tree in newick format:
+
+(AFS60641.1_Candidatus_Entotheonella_factor_polytheonamide_PoyE_polytheonamide:1.0651192375,WP_028499762.1_Microvirgula_aerodenitrificans_AerE_aeronamide:0.3929797334,(((Candidatus_Eudoremicrobium_malaspinii_EreM_this_study:1.8227988666,(AKC92641_1_Amycolatopsis_sp_SANK_60206_A_102395_Other:0.1705644508,BAI53084_1_Streptomyces_griseus_A_500359_NRP:0.3387997425)100:1.0736368610)92:0.6498089101,(((AET51865_1_Marinactinospora_thermotolerans_A_201A_Other:0.4506710499,CAD62202_1_Saccharothrix_mutabilis_A_201A_Other:0.4280538670)100:0.9500984214,AAK83186_1_Streptomyces_viridochromogenes_Tue57_avilamycin_A_Saccharide:1.4690291532)97:0.4876373998,(AET51868_1_Marinactinospora_thermotolerans_A_201A_Other:0.2597471201,CAD62205_1_Saccharothrix_mutabilis_A_201A_Other:0.2592508461)100:0.8408683498)86:0.2461821003)95:0.4438289738,((((((ABI26077_1_Planktothrix_agardhii_NIVA_CYA_116_cyanopeptin_NRP:0.5049141226,(DAC80073_1_Gynuella_sunshinyii_YC6258_tartrolon_Polyketide:0.3624150461,(AMH40422_1_Leptolyngbya_sp_ISBN3_Nov_94_8_phormidolide_Polyketide:0.3459495209,(AFX60309_1_Serratia_marcescens_oocydin_A_NRPPolyketide:0.0599787215,AFX60332_1_Serratia_plymuthica_oocydin_A_NRPPolyketide:0.0517854249)100:0.3220590916)86:0.0818509723)99:0.2485385471)99:0.4492723134,((BCRE_RS14165_Candidatus_Burkholderia_crenata_FR900359_NRP:0.5228598683,BAP05589_1_uncultured_Candidatus_Entotheonella_sp_calyculin_NRPPolyketide:0.5351117645)97:0.1628279935,((PA2302_Pseudomonas_aeruginosa_PAO1_l_2_Amino_4_methoxy_trans_3_butenoic_acid_NRP:0.5674595270,AAZ23082_1_Streptomyces_fradiae_A54145_NRP:0.7121513038)71:0.2042615216,(ABV56588_1_Kutzneria_sp_744_kutzneride_NRP:0.2615049860,STRAU_RS01650_Streptomyces_aurantiacus_JA_4570_aurantimycin_A_NRPPolyketide:0.4848217674)100:0.4155969807)55:0.0826101498)63:0.1916244069)45:0.0774648644,(AJY78093_1_Myxococcus_virescens_bengamide_Polyketide:0.6743125900,(CAQ43079_1_Chondromyces_crocatus_chondrochloren_A_NRPPolyketide:0.3663080224,(AAK19884_1_Sorangium_cellulosum_soraphens_Polyketide:0.2813774524,CCE88382_1_Sorangium_cellulosum_pellasoren_NRPPolyketide:0.1736008622)100:0.2696117433)92:0.1080725777)92:0.1981049310)84:0.1669136457,BAV32148_1_Sordaria_araneosa_sordarin_Polyketide:1.2294513508)65:0.1438819661,(CAA60470_1_Streptomyces_rapamycinicus_NRRL_5491_rapamycin_NRPPolyketide:0.2373781428,AAF86398_1_Streptomyces_hygroscopicus_FR_900520_NRPPolyketide:0.1653792545)100:0.4430612726)67:0.1077149833,(((AEP40919_1_Nocardiopsis_sp_FU_40_apoptolidin_Polyketide:0.6140511827,AMYAL_RS47350_Amycolatopsis_alba_DSM_44262_ansacarbamitocin_A_maytansinoids_Polyketide:0.7676536198)85:0.1945759602,BAJ52700_1_Streptomyces_sp_TA_0256_FD_594_Polyketide:0.5181379551)85:0.2697695855,Sare_4554_Salinispora_arenicola_CNS_205_cyclomarin_D_NRP:0.6436302921)71:0.1814173231)32:0.0636099078)100:3.0998951910);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 5000 bootstrap trees
+Log-likelihood of consensus tree: -18451.528806
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------AFS60641.1_Candidatus_Entotheonella_factor_polytheonamide_PoyE_polytheonamide
+|
++--WP_028499762.1_Microvirgula_aerodenitrificans_AerE_aeronamide
+|
+|                                          +----------------Candidatus_Eudoremicrobium_malaspinii_EreM_this_study
+|                                    +-----| (92)
+|                                    |     |         +--AKC92641_1_Amycolatopsis_sp_SANK_60206_A_102395_Other
+|                                    |     +---------| (100)
+|                                    |               +--BAI53084_1_Streptomyces_griseus_A_500359_NRP
+|                                +---| (95)
+|                                |   |               +---AET51865_1_Marinactinospora_thermotolerans_A_201A_Other
+|                                |   |      +--------| (100)
+|                                |   |      |        +---CAD62202_1_Saccharothrix_mutabilis_A_201A_Other
+|                                |   |  +---| (97)
+|                                |   |  |   +-------------AAK83186_1_Streptomyces_viridochromogenes_Tue57_avilamycin_A_Saccharide
+|                                |   +--| (86)
+|                                |      |       +--AET51868_1_Marinactinospora_thermotolerans_A_201A_Other
+|                                |      +-------| (100)
+|                                |              +--CAD62205_1_Saccharothrix_mutabilis_A_201A_Other
+|                             +--| (40)
+|                             |  |               +---ABI26077_1_Planktothrix_agardhii_NIVA_CYA_116_cyanopeptin_NRP
+|                             |  |           +---| (99)
+|                             |  |           |   |  +--DAC80073_1_Gynuella_sunshinyii_YC6258_tartrolon_Polyketide
+|                             |  |           |   +--| (99)
+|                             |  |           |      |  +--AMH40422_1_Leptolyngbya_sp_ISBN3_Nov_94_8_phormidolide_Polyketide
+|                             |  |           |      +--| (86)
+|                             |  |           |         |  +--AFX60309_1_Serratia_marcescens_oocydin_A_NRPPolyketide
+|                             |  |           |         +--| (100)
+|                             |  |           |            +--AFX60332_1_Serratia_plymuthica_oocydin_A_NRPPolyketide
+|                             |  |        +--| (45)
+|                             |  |        |  |     +----BCRE_RS14165_Candidatus_Burkholderia_crenata_FR900359_NRP
+|                             |  |        |  |  +--| (97)
+|                             |  |        |  |  |  +----BAP05589_1_uncultured_Candidatus_Entotheonella_sp_calyculin_NRPPolyketide
+|                             |  |        |  +--| (63)
+|                             |  |        |     |     +----PA2302_Pseudomonas_aeruginosa_PAO1_l_2_Amino_4_methoxy_trans_3_butenoic_acid_NRP
+|                             |  |        |     |  +--| (71)
+|                             |  |        |     |  |  +-----AAZ23082_1_Streptomyces_fradiae_A54145_NRP
+|                             |  |        |     +--| (55)
+|                             |  |        |        |   +--ABV56588_1_Kutzneria_sp_744_kutzneride_NRP
+|                             |  |        |        +---| (100)
+|                             |  |        |            +---STRAU_RS01650_Streptomyces_aurantiacus_JA_4570_aurantimycin_A_NRPPolyketide
+|                             |  |     +--| (84)
+|                             |  |     |  |  +-----AJY78093_1_Myxococcus_virescens_bengamide_Polyketide
+|                             |  |     |  +--| (92)
+|                             |  |     |     |  +--CAQ43079_1_Chondromyces_crocatus_chondrochloren_A_NRPPolyketide
+|                             |  |     |     +--| (92)
+|                             |  |     |        |  +--AAK19884_1_Sorangium_cellulosum_soraphens_Polyketide
+|                             |  |     |        +--| (100)
+|                             |  |     |           +--CCE88382_1_Sorangium_cellulosum_pellasoren_NRPPolyketide
+|                             |  |  +--| (65)
+|                             |  |  |  +----------BAV32148_1_Sordaria_araneosa_sordarin_Polyketide
+|                             |  +--| (67)
+|                             |     |   +--CAA60470_1_Streptomyces_rapamycinicus_NRRL_5491_rapamycin_NRPPolyketide
+|                             |     +---| (100)
+|                             |         +--AAF86398_1_Streptomyces_hygroscopicus_FR_900520_NRPPolyketide
++-----------------------------| (100)
+                              |        +----AEP40919_1_Nocardiopsis_sp_FU_40_apoptolidin_Polyketide
+                              |     +--| (85)
+                              |     |  +------AMYAL_RS47350_Amycolatopsis_alba_DSM_44262_ansacarbamitocin_A_maytansinoids_Polyketide
+                              |  +--| (85)
+                              |  |  +----BAJ52700_1_Streptomyces_sp_TA_0256_FD_594_Polyketide
+                              +--| (71)
+                                 +-----Sare_4554_Salinispora_arenicola_CNS_205_cyclomarin_D_NRP
+
+
+Consensus tree in newick format: 
+
+(AFS60641.1_Candidatus_Entotheonella_factor_polytheonamide_PoyE_polytheonamide:1.0479223177,WP_028499762.1_Microvirgula_aerodenitrificans_AerE_aeronamide:0.4113012197,((((Candidatus_Eudoremicrobium_malaspinii_EreM_this_study:1.8254956321,(AKC92641_1_Amycolatopsis_sp_SANK_60206_A_102395_Other:0.1706001796,BAI53084_1_Streptomyces_griseus_A_500359_NRP:0.3389074067)100:1.0705611975)92:0.6496332568,(((AET51865_1_Marinactinospora_thermotolerans_A_201A_Other:0.4491739311,CAD62202_1_Saccharothrix_mutabilis_A_201A_Other:0.4301911251)100:0.9561134754,AAK83186_1_Streptomyces_viridochromogenes_Tue57_avilamycin_A_Saccharide:1.4661860095)97:0.4901781281,(AET51868_1_Marinactinospora_thermotolerans_A_201A_Other:0.2600556185,CAD62205_1_Saccharothrix_mutabilis_A_201A_Other:0.2590883820)100:0.8402870462)86:0.2458489168)95:0.5106723002,(((((ABI26077_1_Planktothrix_agardhii_NIVA_CYA_116_cyanopeptin_NRP:0.5048969488,(DAC80073_1_Gynuella_sunshinyii_YC6258_tartrolon_Polyketide:0.3624827521,(AMH40422_1_Leptolyngbya_sp_ISBN3_Nov_94_8_phormidolide_Polyketide:0.3459847670,(AFX60309_1_Serratia_marcescens_oocydin_A_NRPPolyketide:0.0599886042,AFX60332_1_Serratia_plymuthica_oocydin_A_NRPPolyketide:0.0517903453)100:0.3221406005)86:0.0818670111)99:0.2486767114)99:0.4494205337,((BCRE_RS14165_Candidatus_Burkholderia_crenata_FR900359_NRP:0.5231683144,BAP05589_1_uncultured_Candidatus_Entotheonella_sp_calyculin_NRPPolyketide:0.5351141340)97:0.1629214779,((PA2302_Pseudomonas_aeruginosa_PAO1_l_2_Amino_4_methoxy_trans_3_butenoic_acid_NRP:0.5675194309,AAZ23082_1_Streptomyces_fradiae_A54145_NRP:0.7123579081)71:0.2044420525,(ABV56588_1_Kutzneria_sp_744_kutzneride_NRP:0.2616811146,STRAU_RS01650_Streptomyces_aurantiacus_JA_4570_aurantimycin_A_NRPPolyketide:0.4848438172)100:0.4157453718)55:0.0825511215)63:0.1916760962)45:0.0785184412,(AJY78093_1_Myxococcus_virescens_bengamide_Polyketide:0.6743839325,(CAQ43079_1_Chondromyces_crocatus_chondrochloren_A_NRPPolyketide:0.3662628206,(AAK19884_1_Sorangium_cellulosum_soraphens_Polyketide:0.2815013250,CCE88382_1_Sorangium_cellulosum_pellasoren_NRPPolyketide:0.1736043360)100:0.2697664088)92:0.1082434435)92:0.1976372138)84:0.1657216387,BAV32148_1_Sordaria_araneosa_sordarin_Polyketide:1.2303022141)65:0.1422938946,(CAA60470_1_Streptomyces_rapamycinicus_NRRL_5491_rapamycin_NRPPolyketide:0.2375992714,AAF86398_1_Streptomyces_hygroscopicus_FR_900520_NRPPolyketide:0.1652022781)100:0.4445584541)67:0.1036078660)40:0.0686441303,(((AEP40919_1_Nocardiopsis_sp_FU_40_apoptolidin_Polyketide:0.6147442024,AMYAL_RS47350_Amycolatopsis_alba_DSM_44262_ansacarbamitocin_A_maytansinoids_Polyketide:0.7673923433)85:0.1938477822,BAJ52700_1_Streptomyces_sp_TA_0256_FD_594_Polyketide:0.5194959516)85:0.2685444781,Sare_4554_Salinispora_arenicola_CNS_205_cyclomarin_D_NRP:0.6457117297)71:0.1171176417)100:3.1466818094);
+
+TIME STAMP
+----------
+
+Date and time: Sun Jul  4 22:10:03 2021
+Total CPU time used: 65.839201 seconds (0h:1m:5s)
+Total wall-clock time used: 34.49860001 seconds (0h:0m:34s)
+

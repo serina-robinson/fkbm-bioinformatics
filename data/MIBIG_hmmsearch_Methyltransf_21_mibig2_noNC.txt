@@ -1,0 +1,265 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/serinarobinson/Downloads/Methyltransf_21.HMM
+# target sequence database:        /Users/serinarobinson/Documents/github/fkbm-bioinformatics/data/mibig_prot_seqs_2.0.fasta
+# show alignments in output:       no
+# model-specific thresholding:     NC cutoffs
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Methyltransf_21  [M=173]
+Accession:   PF05050.14
+Description: Methyltransferase FkbM domain
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                                                                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                                                                  -----------
+    2.6e-19   70.8   0.0    3.2e-19   70.5   0.0    1.1  1  BGC0001138|c1|36503-37225|+|AET51868.1|methyltransferase|AET51868.1                        
+    4.3e-19   70.1   0.0    5.5e-19   69.7   0.0    1.1  1  BGC0000873|c1|30325-31035|+|CAD62205.1|Ata11_protein|CAD62205.1                            
+    9.5e-19   69.0   0.1    2.9e-18   67.4   0.1    2.0  1  BGC0000331|c1|2349-12782|+|ABI26077.1|OciA|ABI26077.1                                      
+    5.8e-18   66.4   0.0    7.1e-18   66.1   0.0    1.1  1  BGC0001191|c1|14429-15163|+|AKC92641.1|putative_O-methyltransferase|AKC92641.1             
+    1.1e-17   65.6   0.0    1.3e-17   65.3   0.0    1.1  1  BGC0000362|c1|27286-28008|+|AAD44221.1|unknown|AAD44221.1                                  
+    2.3e-17   64.5   0.0    2.9e-17   64.1   0.0    1.1  1  BGC0001807|c1|94319-95044|+|ATL73058.1|hypothetical_protein|ATL73058.1                     
+    2.9e-17   64.2   0.0    3.9e-17   63.7   0.0    1.1  1  BGC0001183|c1|108149-108931|-|AGC09508.1|LobA3|AGC09508.1                                  
+    6.6e-17   63.0   0.0    9.5e-17   62.5   0.0    1.2  1  BGC0000021|c1|18667-19452|+|AEP40919.1|O-methyltransferase|AEP40919.1                      
+    2.5e-16   61.1   0.0    3.5e-16   60.6   0.0    1.2  1  BGC0002011|c1|17590-18447|+|AMYAL_RS47350|FkbM_family_methyltransferase|WP_084702269.1     
+    4.6e-16   60.2   0.0      6e-16   59.9   0.0    1.2  1  BGC0001963|c1|29890-30696|-|AZF85925.1|O-methyltransferase|AZF85925.1                      
+    1.7e-15   58.4   0.0    2.2e-15   58.0   0.0    1.1  1  BGC0000698|c1|8342-9091|+|ABC42543.1|putative_methyltransferase|ABC42543.1                 
+    2.1e-15   58.1   0.0      6e-15   56.6   0.0    1.8  1  BGC0001034|c1|4808-7192|+|CCE88382.1|polyketide_synthase|CCE88382.1                        
+    3.6e-15   57.3   0.0    5.2e-15   56.8   0.0    1.3  1  BGC0000994|c1|72623-73405|+|AAF86398.1|FkbM|AAF86398.1                                     
+    4.7e-15   57.0   0.0      6e-15   56.6   0.0    1.1  1  BGC0000026|c1|28925-29644|+|AAK83186.1|putative_methyltransferase|AAK83186.1               
+    9.8e-15   55.9   0.0    1.5e-14   55.3   0.0    1.2  1  BGC0000333|c1|8739-9530|+|Sare_4554|methyltransferase_FkbM_family|ABW00323.1               
+      1e-14   55.9   0.1    2.5e-14   54.6   0.1    1.8  1  BGC0001836|c1|4226-24685|+|DAC80073.1|PKS|DAC80073.1                                       
+      1e-14   55.9   0.0    1.2e-14   55.6   0.0    1.1  1  BGC0000288|c1|32001-32738|+|BAJ19055.1|putative_methyltransferase|BAJ19055.1               
+    3.4e-14   54.2   0.0    6.8e-14   53.2   0.0    1.5  1  BGC0001373|c1|30572-31351|-|BAV32148.1|methyltransferase|BAV32148.1                        
+    3.9e-14   54.0   0.0    4.9e-14   53.6   0.0    1.1  1  BGC0000949|c1|27888-28622|+|BAI53084.1|putative_O-methyltransferase|BAI53084.1             
+    7.2e-14   53.1   0.0    1.3e-13   52.3   0.0    1.4  1  BGC0000970|c1|31894-37500|+|CAQ43079.1|polyketide_synthase|CAQ43079.1                      
+    7.3e-14   53.1   0.0    1.5e-13   52.0   0.0    1.5  1  BGC0001040|c1|97622-98404|+|CAA60470.1|methyltransferase|CAA60470.1                        
+    8.5e-14   52.9   0.0    1.8e-13   51.8   0.0    1.6  1  BGC0000967|c1|20404-31761|+|BAP05589.1|calA|BAP05589.1                                     
+    8.8e-14   52.8   0.0      1e-13   52.6   0.0    1.1  1  BGC0000495|c1|34448-35209|-|ACR33061.1|methyltransferase|ACR33061.1                        
+    1.7e-13   51.9   0.0    2.9e-13   51.1   0.0    1.4  1  BGC0000287|c1|611-6985|-|PA2302|AmbE|AAG05690.1                                            
+    2.5e-13   51.3   0.0    5.9e-13   50.1   0.0    1.7  1  BGC0001350|c1|5894-21055|+|AMH40422.1|PKS|AMH40422.1                                       
+    5.9e-13   50.1   0.0    1.3e-12   49.0   0.0    1.7  1  BGC0001031|c1|7252-18210|+|AFX60309.1|polyketide_synthase|AFX60309.1                       
+    6.5e-13   50.0   0.0    9.7e-13   49.4   0.0    1.2  1  BGC0001851|c1|35835-36644|+|IO28_RS0104885|putative_O-methyltransferase|WP_031147044.1     
+      1e-12   49.4   0.0      2e-12   48.4   0.0    1.5  1  BGC0001451|c1|1621-11031|-|BCRE_RS14165|non-ribosomal_peptide_synthetase|WP_050383082.1    
+    1.1e-12   49.2   0.0    1.8e-12   48.5   0.0    1.3  1  BGC0000147|c1|10080-12671|-|AAK19884.1|putative_methoxymalonyl-CoA_synthase|AAK19884.1     
+    1.8e-12   48.5   0.0    3.8e-12   47.5   0.0    1.6  1  BGC0001032|c1|7529-18502|+|AFX60332.1|polyketide_synthase|AFX60332.1                       
+      3e-12   47.8   0.0      5e-12   47.1   0.0    1.3  1  BGC0000291|c1|96241-97029|+|AAZ23082.1|possible_O-methyltransferase|AAZ23082.1             
+    3.2e-12   47.7   0.0    5.5e-12   47.0   0.0    1.4  1  BGC0000378|c1|21587-37369|-|ABV56588.1|KtzH|ABV56588.1                                     
+    6.7e-12   46.7   0.0    1.8e-11   45.3   0.0    1.8  1  BGC0001902|c1|24170-29350|+|AJY78093.1|polyketide_synthase|AJY78093.1                      
+    7.7e-12   46.5   0.0    1.1e-11   46.0   0.0    1.2  1  BGC0001852|c1|35990-36799|+|IH80_RS0102840|putative_O-methyltransferase|WP_030957379.1     
+    4.3e-11   44.1   0.0    9.9e-11   42.9   0.0    1.6  1  BGC0000222|c1|32359-33168|+|BAJ52700.1|putative_methyltransferase|BAJ52700.1               
+    1.4e-10   42.3   0.0    1.9e-10   42.0   0.0    1.1  1  BGC0001138|c1|32814-33542|+|AET51865.1|methyltransferase|AET51865.1                        
+    1.5e-10   42.3   0.0    3.9e-10   40.9   0.0    1.7  1  BGC0001519|c1|13008-21656|+|STRAU_RS01650|non-ribosomal_peptide_synthetase|WP_016638469.1  
+    2.5e-10   41.6   0.0    3.3e-10   41.2   0.0    1.2  1  BGC0000873|c1|26580-27410|+|CAD62202.1|Ata8_protein|CAD62202.1                             
+
+
+Domain annotation for each sequence:
+>> BGC0001138|c1|36503-37225|+|AET51868.1|methyltransferase|AET51868.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.5   0.0   3.7e-22   3.2e-19       1     150 [.      41     181 ..      41     205 .. 0.80
+
+>> BGC0000873|c1|30325-31035|+|CAD62205.1|Ata11_protein|CAD62205.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.7   0.0   6.3e-22   5.5e-19       1     168 [.      37     196 ..      37     200 .. 0.76
+
+>> BGC0000331|c1|2349-12782|+|ABI26077.1|OciA|ABI26077.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.4   0.1   3.3e-21   2.9e-18       1     173 []     146     340 ..     146     340 .. 0.75
+
+>> BGC0001191|c1|14429-15163|+|AKC92641.1|putative_O-methyltransferase|AKC92641.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.1   0.0   8.1e-21   7.1e-18       1     172 [.      38     206 ..      38     207 .. 0.86
+
+>> BGC0000362|c1|27286-28008|+|AAD44221.1|unknown|AAD44221.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.3   0.0   1.5e-20   1.3e-17       1     172 [.      42     212 ..      42     213 .. 0.90
+
+>> BGC0001807|c1|94319-95044|+|ATL73058.1|hypothetical_protein|ATL73058.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.1   0.0   3.3e-20   2.9e-17       1     151 [.      37     198 ..      37     224 .. 0.82
+
+>> BGC0001183|c1|108149-108931|-|AGC09508.1|LobA3|AGC09508.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   63.7   0.0   4.4e-20   3.9e-17       1     163 [.      56     225 ..      56     235 .. 0.80
+
+>> BGC0000021|c1|18667-19452|+|AEP40919.1|O-methyltransferase|AEP40919.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.5   0.0   1.1e-19   9.5e-17       1     172 [.      55     239 ..      55     240 .. 0.74
+
+>> BGC0002011|c1|17590-18447|+|AMYAL_RS47350|FkbM_family_methyltransferase|WP_084702269.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   60.6   0.0     4e-19   3.5e-16       1     173 []      79     264 ..      79     264 .. 0.79
+
+>> BGC0001963|c1|29890-30696|-|AZF85925.1|O-methyltransferase|AZF85925.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.9   0.0   6.9e-19     6e-16       1     172 [.      55     239 ..      55     240 .. 0.82
+
+>> BGC0000698|c1|8342-9091|+|ABC42543.1|putative_methyltransferase|ABC42543.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.0   0.0   2.5e-18   2.2e-15       1     172 [.      39     206 ..      39     207 .. 0.82
+
+>> BGC0001034|c1|4808-7192|+|CCE88382.1|polyketide_synthase|CCE88382.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.6   0.0   6.9e-18     6e-15       1     172 [.     572     763 ..     572     764 .. 0.69
+
+>> BGC0000994|c1|72623-73405|+|AAF86398.1|FkbM|AAF86398.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.8   0.0     6e-18   5.2e-15       1     172 [.      52     236 ..      52     237 .. 0.76
+
+>> BGC0000026|c1|28925-29644|+|AAK83186.1|putative_methyltransferase|AAK83186.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.6   0.0   6.9e-18     6e-15       1     171 [.      30     190 ..      30     192 .. 0.72
+
+>> BGC0000333|c1|8739-9530|+|Sare_4554|methyltransferase_FkbM_family|ABW00323.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.3   0.0   1.7e-17   1.5e-14       1     153 [.      58     226 ..      58     241 .. 0.70
+
+>> BGC0001836|c1|4226-24685|+|DAC80073.1|PKS|DAC80073.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.6   0.1   2.8e-17   2.5e-14       1     172 [.     442     637 ..     442     638 .. 0.72
+
+>> BGC0000288|c1|32001-32738|+|BAJ19055.1|putative_methyltransferase|BAJ19055.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.6   0.0   1.4e-17   1.2e-14       1     172 [.      38     206 ..      38     207 .. 0.84
+
+>> BGC0001373|c1|30572-31351|-|BAV32148.1|methyltransferase|BAV32148.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.2   0.0   7.7e-17   6.8e-14       1     171 [.      51     236 ..      51     238 .. 0.63
+
+>> BGC0000949|c1|27888-28622|+|BAI53084.1|putative_O-methyltransferase|BAI53084.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.6   0.0   5.6e-17   4.9e-14       1     172 [.      38     206 ..      38     207 .. 0.77
+
+>> BGC0000970|c1|31894-37500|+|CAQ43079.1|polyketide_synthase|CAQ43079.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.3   0.0   1.5e-16   1.3e-13       1     172 [.    1652    1843 ..    1652    1844 .. 0.76
+
+>> BGC0001040|c1|97622-98404|+|CAA60470.1|methyltransferase|CAA60470.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.0   0.0   1.7e-16   1.5e-13       1     172 [.      52     236 ..      52     237 .. 0.78
+
+>> BGC0000967|c1|20404-31761|+|BAP05589.1|calA|BAP05589.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.8   0.0   2.1e-16   1.8e-13       1     172 [.     553     740 ..     553     741 .. 0.70
+
+>> BGC0000495|c1|34448-35209|-|ACR33061.1|methyltransferase|ACR33061.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.6   0.0   1.2e-16     1e-13       1     143 [.      37     176 ..      37     236 .. 0.69
+
+>> BGC0000287|c1|611-6985|-|PA2302|AmbE|AAG05690.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.1   0.0   3.3e-16   2.9e-13       1     173 []     950    1147 ..     950    1147 .. 0.70
+
+>> BGC0001350|c1|5894-21055|+|AMH40422.1|PKS|AMH40422.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.1   0.0   6.7e-16   5.9e-13       1     172 [.     430     625 ..     430     626 .. 0.74
+
+>> BGC0001031|c1|7252-18210|+|AFX60309.1|polyketide_synthase|AFX60309.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.0   0.0   1.5e-15   1.3e-12       1     172 [.     437     631 ..     437     632 .. 0.76
+
+>> BGC0001851|c1|35835-36644|+|IO28_RS0104885|putative_O-methyltransferase|WP_031147044.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.4   0.0   1.1e-15   9.7e-13       1     151 [.      64     230 ..      64     248 .. 0.68
+
+>> BGC0001451|c1|1621-11031|-|BCRE_RS14165|non-ribosomal_peptide_synthetase|WP_050383082.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.4   0.0   2.3e-15     2e-12       1     173 []    2031    2219 ..    2031    2219 .. 0.71
+
+>> BGC0000147|c1|10080-12671|-|AAK19884.1|putative_methoxymalonyl-CoA_synthase|AAK19884.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.5   0.0   2.1e-15   1.8e-12       1     172 [.     648     839 ..     648     840 .. 0.77
+
+>> BGC0001032|c1|7529-18502|+|AFX60332.1|polyketide_synthase|AFX60332.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.5   0.0   4.4e-15   3.8e-12       1     172 [.     435     629 ..     435     630 .. 0.75
+
+>> BGC0000291|c1|96241-97029|+|AAZ23082.1|possible_O-methyltransferase|AAZ23082.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.1   0.0   5.7e-15     5e-12       1     171 [.      44     235 ..      44     237 .. 0.68
+
+>> BGC0000378|c1|21587-37369|-|ABV56588.1|KtzH|ABV56588.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.0   0.0   6.3e-15   5.5e-12       1     171 [.    2500    2685 ..    2500    2687 .. 0.80
+
+>> BGC0001902|c1|24170-29350|+|AJY78093.1|polyketide_synthase|AJY78093.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.3   0.0   2.1e-14   1.8e-11       1     172 [.    1491    1682 ..    1491    1683 .. 0.67
+
+>> BGC0001852|c1|35990-36799|+|IH80_RS0102840|putative_O-methyltransferase|WP_030957379.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.0   0.0   1.3e-14   1.1e-11       1     151 [.      64     230 ..      64     248 .. 0.67
+
+>> BGC0000222|c1|32359-33168|+|BAJ52700.1|putative_methyltransferase|BAJ52700.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.9   0.0   1.1e-13   9.9e-11       1     163 [.      59     233 ..      59     243 .. 0.75
+
+>> BGC0001138|c1|32814-33542|+|AET51865.1|methyltransferase|AET51865.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.0   0.0   2.1e-13   1.9e-10       1     171 [.      32     192 ..      32     194 .. 0.78
+
+>> BGC0001519|c1|13008-21656|+|STRAU_RS01650|non-ribosomal_peptide_synthetase|WP_016638469.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.9   0.0   4.4e-13   3.9e-10       1     163 [.    2512    2690 ..    2512    2700 .. 0.69
+
+>> BGC0000873|c1|26580-27410|+|CAD62202.1|Ata8_protein|CAD62202.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.2   0.0   3.7e-13   3.3e-10       1     172 [.      68     230 ..      68     231 .. 0.84
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (173 nodes)
+Target sequences:                        33173  (20068488 residues searched)
+Passed MSV filter:                       499  (0.0150424); expected 663.5 (0.02)
+Passed bias filter:                      467  (0.0140777); expected 663.5 (0.02)
+Passed Vit filter:                        73  (0.00220058); expected 33.2 (0.001)
+Passed Fwd filter:                        39  (0.00117565); expected 0.3 (1e-05)
+Initial search space (Z):              33173  [actual number of targets]
+Domain search space  (domZ):              38  [number of targets reported over threshold]
+# CPU time: 1.61u 0.04s 00:00:01.65 Elapsed: 00:00:00.33
+# Mc/sec: 10520.75
+//
+[ok]
