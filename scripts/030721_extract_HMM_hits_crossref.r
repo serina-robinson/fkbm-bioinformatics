@@ -32,8 +32,11 @@ metdf <- data.frame(bgc = word(names(met_hits), sep = "\\|", 1),
 
 # Read in manually-curated literature information about clusters
 manual <- read_excel("data/39_MIBiG_Methyltransf_21_lit_dat_manually_curated.xlsx") %>%
-  dplyr::filter(to_include == "yes") %>%
+  dplyr::filter(include_in_tree == "yes") %>%
   dplyr::filter(!duplicated(acc))
+
+metdf[!metdf$bgc %in% manual$bgc,]
+metdf$bgc %in% manual$bgc
 
 merg <- manual %>%
   inner_join(., metdf, keep = F, by = "bgc", suffix = c("", ".y")) %>%
