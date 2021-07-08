@@ -1,8 +1,0 @@
-Failed to parse command line: No such option "-c".
-Usage: hmmsearch [options] <hmmfile> <seqdb>
-
-where most common options are:
-  -h : show brief help on version and usage
-
-To see more help on available options, do hmmsearch -h
-
